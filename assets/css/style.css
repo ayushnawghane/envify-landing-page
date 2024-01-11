@@ -393,7 +393,9 @@ footer{
 }
 
 .para_style{
-  color: var(--token-9ba5df47-566d-4cce-965a-b909bddf5adc, #cccccc);;
+  color: var(--token-9ba5df47-566d-4cce-965a-b909bddf5adc, #cccccc);
+    font-size: 17px;
+    font-weight: 100;
 }
 
 .about{
@@ -440,7 +442,7 @@ footer{
 }
 
 .about_section{
-  padding: 100px 0px 50px 0px;
+  padding: 100px 50px 100px 50px;
 }
 
 .about_para_div{
@@ -1183,23 +1185,27 @@ footer{
 }
 
 .about_page_head{
+  font-family: 'Poppins';
+  appearance: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 153px;
   outline: none;
-  display: inline-flex;
-  justify-content: flex-start;
-  /* color: #ddff00; */
-  flex-shrink: 0;
-  transform: none;
-  opacity: 1;
-  /* border: 1px solid; */
-  border-radius: 20px;
-  padding: 15px;
-  /* background: var(--token-af250fab-523a-41d3-9565-21f31be56f17, rgb(13, 13, 13)) ; */
-  color: var(--token-0d1c15e4-19d4-4f59-abec-7c72f6c1a824, rgb(221, 255, 0))  ;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 40px;
+  font-size: 30px;
+  height: 52px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 1em;
+  background: var(--token-0d1c15e4-19d4-4f59-abec-7c72f6c1a824, rgb(221, 255, 0));
+  color: var(--token-af250fab-523a-41d3-9565-21f31be56f17, rgb(13, 13, 13));
   z-index: 1;
-  /* box-shadow: 0px 20px 35px rgba(221, 255, 0, 0.2); */
-  filter: drop-shadow(0px 20px 35px #ddff00);
-  font-size: 57px;
-  margin: 0;
+  box-shadow: 0px 20px 35px rgba(221, 255, 0, 0.2);
 }
 
 .mission_para{
@@ -1215,22 +1221,33 @@ footer{
 
 
 .visionmissiondiv{
-text-align: center;
+text-align: left;
 }
 
 .missionborder{
-  border: 1px solid #656464;
   display: flex;
-  align-items: center;
+  justify-items: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: row-reverse;
   justify-content: center;
-  border-radius: 30px;
 }
 
-.visionborder{
-  border: 1px solid #656464 ;
+.vissionborder{
   display: flex;
-  align-items: center;
+  justify-items: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
   justify-content: center;
-  border-radius: 30px;
 
+}
+
+.brand_section{
+  padding: 100px 0px 50px 0px;
+}
+
+.border_about{
+  border-top: 1px solid #ddff00;
 }
