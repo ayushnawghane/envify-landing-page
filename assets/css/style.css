@@ -1,5 +1,5 @@
 body{
-    background-color: #0D0D0D;
+    background-color: #0d0d0d;
 }
 
 
@@ -57,10 +57,6 @@ body{
     color: white;
     width: 100%;
     }
-
-.landing {
-    padding: 150px;
-}
 
 .aboutsection{
   padding: 100px;
@@ -296,18 +292,6 @@ border: 2px solid rgba(0, 255, 24, 1);
 .footerpara{
   font-size: 14px !important;
   text-align: justify;
-}
-
-.fa-brands, .fab{
-  font-size: 28px;
-  color: #ddff00;
-}
-
-footer{
-  margin-top: 42px;
-  background: #0d0d0d;
-  padding: 20px;
-  border-top: 2px solid #6b6b6b;
 }
 
 .footerlogo{
@@ -722,10 +706,6 @@ margin-bottom: 0;
   /* margin: 25px; */
 }
 
-body{
-  background-color: #0D0D0D;
-}
-
 .navbar {
   position: fixed;
   width: 100%;
@@ -882,18 +862,6 @@ padding: 3px 30px;
   text-align: justify;
 }
 
-.fa-brands, .fab{
-  font-size: 28px;
-  color: #ddff00;
-}
-
-footer{
-  margin-top: 42px;
-  background: #0d0d0d;
-  padding: 20px;
-  border-top: 2px solid #6b6b6b;
-}
-
 ul li{
   list-style: none;
 }
@@ -910,10 +878,6 @@ ul li{
 
 .modal-footer{
   border: none;
-}
-
-body{
-  background-color: #0D0D0D;
 }
 
 
@@ -983,8 +947,7 @@ padding: 3px 30px;
 footer{
   margin-top: 42px;
   background: #0d0d0d;
-  padding: 20px;
-  border-top: 2px solid #6b6b6b;
+  padding: 20px 0px 0px 0px;
 }
 
 
@@ -1146,7 +1109,7 @@ footer{
 
 .fa-brands, .fab{
   font-size: 28px;
-  color: #ddff00;
+  /* color: #ddff00; */
 }
 
 .foot_row{
@@ -1250,4 +1213,65 @@ text-align: left;
 
 .border_about{
   border-top: 1px solid #ddff00;
+}
+
+.landing{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.floating {  
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }    
+}
+
+.copyright{
+  color: #fff;
+  padding: 10px;
+  background: #181717;
+  margin-top: 10px;
+}
+
+.footer_links{
+  color: #ddff00;
+}
+
+.footer_setting{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  /* gap: 30px; */
+}
+
+/* .fa-instagram{
+  color: #C90B7E;
+} */
+
+.fa-youtube{
+  color: red;
+}
+
+.fa-x-twitter{
+  color: #fff;
+}
+
+#instagram{
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+          /* Also define standard property for compatibility */
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
