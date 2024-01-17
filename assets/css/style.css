@@ -70,10 +70,10 @@ body{
 }
 
 .introhead{
-  --framer-font-family: "Poppins", "Poppins Placeholder", sans-serif;
+  /* --framer-font-family: "Poppins", "Poppins Placeholder", sans-serif;
   --framer-font-family-bold: "Poppins", "Poppins Placeholder", sans-serif;
   --framer-font-family-bold-italic: "Poppins", "Poppins Placeholder", sans-serif;
-  --framer-font-family-italic: "Poppins", "Poppins Placeholder", sans-serif;
+  --framer-font-family-italic: "Poppins", "Poppins Placeholder", sans-serif; */
     color: rgb(198, 198, 198);
     font-weight: bold;
     font-size: 70px;
@@ -295,9 +295,11 @@ border: 2px solid rgba(0, 255, 24, 1);
 }
 
 .footerlogo{
-  width: 100%;
-  justify-items: center;
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
 
 .footnav  .nav-link{
@@ -427,6 +429,11 @@ border: 2px solid rgba(0, 255, 24, 1);
 
 .about_section{
   padding: 100px 50px 100px 50px;
+}
+
+.about_landing_section{
+  padding: 100px 50px 100px 50px;
+  background: url(/assets/images/bg_5.jpg);
 }
 
 .about_para_div{
@@ -597,10 +604,23 @@ span {
   width: 100%;
 }
 
+.founder_anim{
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.founder_grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  background: #fff;
+  width: auto;
+  height: auto;
+}
+
 .founder{
   align-content: center;
   align-items: center;
-  border-radius: 24px;
+  border-radius: 20px;
   display: flex;
   flex: 1 0 0px;
   flex-direction: row;
@@ -613,6 +633,11 @@ span {
   position: relative;
   transform: perspective(1200px);
   will-change: var(--framer-will-change-override, transform);
+  transition: transform 1s;
+}
+
+.founder:hover{
+  transform: scale(1.10);
 }
 
 .founder_details{
@@ -666,18 +691,18 @@ margin-bottom: 0;
 }
 
 .founder_head{
-  margin: 40px;
-  margin-top: 80px;
+  padding: 40px 60px 40px 60px;
+  display: flex;
+  align-content: center;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .bi-controller{
   color: #ddff00;
 }
-
-.highlight_tag{
-  
-}
-
 
 .wrapper{
   position:absolute;  
@@ -700,10 +725,6 @@ margin-bottom: 0;
   font-weight:600;
   line-height:50px;
   text-align:center;
-}
-
-.foot_row{
-  /* margin: 25px; */
 }
 
 .navbar {
@@ -851,12 +872,6 @@ padding: 3px 30px;
   box-shadow: 0px 20px 35px rgba(221, 255, 0, 0.2);
 }
 
-.footerlogo{
-  width: 100%;
-  justify-items: center;
-  margin-top: 20px;
-}
-
 .footerpara{
   font-size: 14px !important;
   text-align: justify;
@@ -947,7 +962,7 @@ padding: 3px 30px;
 footer{
   margin-top: 42px;
   background: #0d0d0d;
-  padding: 20px 0px 0px 0px;
+  padding: 10px 0px 0px 0px;
 }
 
 
@@ -1096,24 +1111,13 @@ footer{
     --framer-text-transform: none;
 }
 
-.footerlogo{
-  width: 100%;
-  justify-items: center;
-  margin-top: 20px;
-}
-
 .footerpara{
   font-size: 14px !important;
   text-align: justify;
 }
 
 .fa-brands, .fab{
-  font-size: 28px;
-  /* color: #ddff00; */
-}
-
-.foot_row{
-  /* margin: 25px; */
+  font-size: 30px;
 }
 
 .about_head_h{
@@ -1250,9 +1254,10 @@ text-align: left;
 
 .footer_setting{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-content: center;
-  align-items: center;
+  align-items: stretch;
+  margin: 30px 0px 30px 0px;
   /* gap: 30px; */
 }
 
@@ -1274,4 +1279,47 @@ text-align: left;
           /* Also define standard property for compatibility */
           background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 2rem;
+}
+
+.grid > div {
+  background: rgb(27 27 27);
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.grid > div::before {
+  content: "";
+  /* padding-bottom: 100%; */
+  display: block;
+}
+
+.grid > div::before,
+.grid > div > img {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.grid > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* filter: grayscale(100%); */
+}
+
+.img_div:hover{
+  box-shadow: 1px 7px 20px #ddff00;
+}
+
+.brand{
+  background: #fff;
+}
+
+.brands_landing_section{
+  padding: 100px 50px 100px 50px;
+  background: url(/assets/images/bg_5.jpg);
 }
