@@ -1410,3 +1410,14 @@ text-align: left;
   display: flex;
   justify-content: center;
 }
+
+
+/* STYLES FOR MAINMODEL */
+
+#canvas3d{
+  position: fixed;
+}
+.header{
+  height: 100vh;
+  width: 100vw;
+}
