@@ -1177,18 +1177,18 @@ footer{
 }
 
 .mission_para{
-  text-align: justify;
-  color: white;
+  text-align: -webkit-auto;
+  color: #c9c9c9;
   font-size: 18px;
   /* margin-top: 21px; */
   margin-bottom: 0px;
 }
 
 .mission_section{
-  padding: 100px 50px;
+  padding: 100px 0px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 100px;
 }
 
 
@@ -1380,4 +1380,33 @@ text-align: left;
   position: fixed;
   background-repeat: no-repeat;
   background-color: #252324;
+}
+
+.new_icon_bg{
+  border: 2px #ddff00 solid;
+  border-radius: 75px;
+  padding: 10px;
+  color: #ddff00;
+  font-size: 15px;
+}
+
+.new_about_head{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 30px;
+  gap: 15px;
+  color: #ddff00;
+  padding: 10px 10px 10px 0px;
+}
+
+.about_new_mission{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.new_img{
+  display: flex;
+  justify-content: center;
 }
