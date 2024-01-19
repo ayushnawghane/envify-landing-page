@@ -1442,7 +1442,10 @@ text-align: left;
 }
 
 .new_about_img{
-  background: url(/assets/images/about_head.jpg);
+  background-image: url(/assets/images/about_head.jpg);
+  width: 100%;
+  position: absolute;
+
 }
 
 
@@ -1455,3 +1458,4 @@ text-align: left;
   height: 100vh;
   width: 100vw;
 }
+
