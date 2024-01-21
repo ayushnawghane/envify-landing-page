@@ -1496,3 +1496,26 @@ text-align: left;
   box-shadow: inset 0px 0px 85px rgba(0, 0, 0, 0.8);
   background-blend-mode:overlay ;
 }
+
+.custom_accordion{
+background-color: #ffffff00;
+color: #d1d1d1;
+}
+
+.custom_accordion_item{
+background-color: #ffffff00;
+font-size: 30px;
+}
+.custom_button{
+  background-color: #ffffff00;
+  font-size: 30px;
+  color: #fff;
+  padding: 30px;
+}
+.custom_accordion_body{
+  padding: 30px;
+}
+
+.custom_service_icon{
+  color: #ddff00;
+}
