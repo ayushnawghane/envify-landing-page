@@ -71,6 +71,9 @@
             </div>
           </nav>
         <div class="main-content">
+          <div id="invertedcursor">
+
+          </div>
         <div class='header'>
         <canvas id="canvas3d"></canvas> 
         <!-- <img src="./assets/images/mini_logo_white.png" width="30%" class='header-logo'/> 3d -->
@@ -478,6 +481,21 @@ var master = gsap.timeline()
 //         loadNow(1);
 //     }, 4000);
 // });
+
+document.body.onmousemove = function (e) {
+  setTimeout(function () {
+    document.documentElement.style.setProperty(
+      '--x',
+      e.clientX + window.scrollX + 'px'
+    );
+
+    document.documentElement.style.setProperty(
+      '--y',
+      e.clientY + window.scrollY + 'px'
+    );
+  }, 100);
+};
+
 
 
     </script>
