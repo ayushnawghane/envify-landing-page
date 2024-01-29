@@ -78,50 +78,25 @@
 
       <div class="nav-container mobile_nav">
         <div class="brand">
-          <a href="#!">Logo</a>
+          <a href="#!"><img src="/assets/images/envify_white.png" alt="" width="30%"></a>
         </div>
-        <nav>
+        <nav class="new_nav">
           <div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
           <ul class="nav-list">
             <li>
-              <a href="#!">Home</a>
+              <a href="/index.html">Home</a>
             </li>
             <li>
-              <a href="#!">About</a>
+              <a href="/aboutus.html">About</a>
             </li>
             <li>
-              <a href="#!">Services</a>
-              <ul class="navbar-dropdown">
-                <li>
-                  <a href="#!">Sass</a>
-                </li>
-                <li>
-                  <a href="#!">Less</a>
-                </li>
-                <li>
-                  <a href="#!">Stylus</a>
-                </li>
-              </ul>
+              <a href="/services.html">Services</a>
             </li>
             <li>
-              <a href="#!">Portfolio</a>
+              <a href="/team.html">Our Team</a>
             </li>
             <li>
-              <a href="#!">Category</a>
-              <ul class="navbar-dropdown">
-                <li>
-                  <a href="#!">Sass</a>
-                </li>
-                <li>
-                  <a href="#!">Less</a>
-                </li>
-                <li>
-                  <a href="#!">Stylus</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#!">Contact</a>
+              <a href="/contactus.html">Contact</a>
             </li>
           </ul>
         </nav>
@@ -309,6 +284,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.17/build/spline-viewer.js"></script>
+    <script src="/assets/js/script.js"></script>
     <script>
       AOS.init();
       //brand slider code
@@ -410,38 +386,6 @@
       //   }, 100);
       // };
 
-
-      (function($) { 
-  $(function() { 
-
-    //  open and close nav 
-    $('#navbar-toggle').click(function() {
-      $('nav ul').slideToggle();
-    });
-
-
-    // Hamburger toggle
-    $('#navbar-toggle').on('click', function() {
-      this.classList.toggle('active');
-    });
-
-
-    // If a link has a dropdown, add sub menu toggle.
-    $('nav ul li a:not(:only-child)').click(function(e) {
-      $(this).siblings('.navbar-dropdown').slideToggle("slow");
-
-      // Close dropdown when select another dropdown
-      $('.navbar-dropdown').not($(this).siblings()).hide("slow");
-      e.stopPropagation();
-    });
-
-
-    // Click outside the dropdown will remove the dropdown class
-    $('html').click(function() {
-      $('.navbar-dropdown').hide();
-    });
-  }); 
-})(jQuery); 
 
       
     </script>
